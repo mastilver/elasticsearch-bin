@@ -1,16 +1,16 @@
 {
-  "name": "flow-bin",
-  "version": "0.18.1",
-  "description": "Binary wrapper for Flow - A static type checker for JavaScript",
+  "name": "elasticsearch-bin",
+  "version": "2.1.0",
+  "description": "Binary wrapper for ElasticSearch - A search server based on Lucene",
   "license": "MIT",
-  "repository": "sindresorhus/flow-bin",
+  "repository": "mastilver/elasticsearch-bin",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "Thomas Sileghem",
+    "email": "th.sileghem@gmail.com",
+    "url": "mastilver.com"
   },
   "bin": {
-    "flow": "cli.js"
+    "elasticsearch": "cli.js"
   },
   "scripts": {
     "test": "npm run postinstall && xo && ava",
@@ -29,12 +29,8 @@
     "cli",
     "bin",
     "binary",
-    "flow",
-    "facebook",
-    "type",
-    "inference",
-    "check",
-    "checker",
+    "elastic-search",
+    "elastic",
     "javascript",
     "js",
     "wrapper"

@@ -1,32 +1,32 @@
-# flow-bin [![Build Status](https://travis-ci.org/flowtype/flow-bin.svg?branch=master)](https://travis-ci.org/flowtype/flow-bin)
+# elasticsearch-bin [![Build Status](https://travis-ci.org/mastilver/elasticsearch-bin.svg?branch=master)](https://travis-ci.org/mastilver/elasticsearch-bin)
 
-> Binary wrapper for [Flow](http://flowtype.org) - A static type checker for JavaScript
+> Binary wrapper for [ElasticSearch](https://www.elastic.co/products/elasticsearch) - A search server based on Lucene.
 
-Only OS X and Linux (64-bit) binaries are currently [provided](http://flowtype.org/docs/getting-started.html#_).
+Based on [flow-bin](https://github.com/flowtype/flow-bin)
 
 
 ## CLI
 
 ```
-$ npm install --global flow-bin
+$ npm install --global elasticsearch-bin
 ```
 
 ```
-$ flow --help
+$ elasticsearch --version
 ```
 
 
 ## API
 
 ```
-$ npm install --save flow-bin
+$ npm install --save elasticsearch-bin
 ```
 
 ```js
 const execFile = require('child_process').execFile;
-const flow = require('flow-bin');
+const elasticsearch = require('elasticsearch-bin');
 
-execFile(flow, ['check'], (err, stdout) => {
+execFile(elasticsearch, ['--version'], (err, stdout) => {
 	console.log(stdout);
 });
 ```
@@ -34,4 +34,4 @@ execFile(flow, ['check'], (err, stdout) => {
 
 ## License
 
-flow-bin is BSD-licensed. We also provide an additional patent grant.
+MIT © [Thomas Sileghem](https://mastilver.com)
